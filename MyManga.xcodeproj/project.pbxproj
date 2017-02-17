@@ -18,6 +18,9 @@
 		F1625A321E56C8490010E1C3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1625A311E56C8490010E1C3 /* Constant.swift */; };
 		F1625A341E56CA720010E1C3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1625A331E56CA720010E1C3 /* APIManager.swift */; };
 		F1FBAF931E56D30400460F8A /* GenericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF921E56D30400460F8A /* GenericExtension.swift */; };
+		F1FBAF971E56DEBB00460F8A /* BookmarkedSeriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF961E56DEBB00460F8A /* BookmarkedSeriesController.swift */; };
+		F1FBAF991E56DEE400460F8A /* HotSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF981E56DEE400460F8A /* HotSeriesViewController.swift */; };
+		F1FBAF9B1E56DF4100460F8A /* CurrentSeriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF9A1E56DF4100460F8A /* CurrentSeriesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		F1625A311E56C8490010E1C3 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F1625A331E56CA720010E1C3 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		F1FBAF921E56D30400460F8A /* GenericExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericExtension.swift; sourceTree = "<group>"; };
+		F1FBAF961E56DEBB00460F8A /* BookmarkedSeriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkedSeriesController.swift; sourceTree = "<group>"; };
+		F1FBAF981E56DEE400460F8A /* HotSeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSeriesViewController.swift; sourceTree = "<group>"; };
+		F1FBAF9A1E56DF4100460F8A /* CurrentSeriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentSeriesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,9 @@
 				F1625A311E56C8490010E1C3 /* Constant.swift */,
 				F1625A331E56CA720010E1C3 /* APIManager.swift */,
 				F1FBAF921E56D30400460F8A /* GenericExtension.swift */,
+				F1FBAF961E56DEBB00460F8A /* BookmarkedSeriesController.swift */,
+				F1FBAF981E56DEE400460F8A /* HotSeriesViewController.swift */,
+				F1FBAF9A1E56DF4100460F8A /* CurrentSeriesController.swift */,
 			);
 			path = MyManga;
 			sourceTree = "<group>";
@@ -351,9 +360,12 @@
 			files = (
 				F1625A341E56CA720010E1C3 /* APIManager.swift in Sources */,
 				F1625A061E56C1AB0010E1C3 /* ViewController.swift in Sources */,
+				F1FBAF9B1E56DF4100460F8A /* CurrentSeriesController.swift in Sources */,
+				F1FBAF991E56DEE400460F8A /* HotSeriesViewController.swift in Sources */,
 				F1625A041E56C1AB0010E1C3 /* AppDelegate.swift in Sources */,
 				F1FBAF931E56D30400460F8A /* GenericExtension.swift in Sources */,
 				F1625A321E56C8490010E1C3 /* Constant.swift in Sources */,
+				F1FBAF971E56DEBB00460F8A /* BookmarkedSeriesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
