@@ -21,6 +21,7 @@
 		F1FBAF971E56DEBB00460F8A /* BookmarkedSeriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF961E56DEBB00460F8A /* BookmarkedSeriesController.swift */; };
 		F1FBAF991E56DEE400460F8A /* HotSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF981E56DEE400460F8A /* HotSeriesViewController.swift */; };
 		F1FBAF9B1E56DF4100460F8A /* CurrentSeriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF9A1E56DF4100460F8A /* CurrentSeriesController.swift */; };
+		F1FBAF9E1E56E8CB00460F8A /* MangaSeriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF9D1E56E8CB00460F8A /* MangaSeriesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F1FBAF961E56DEBB00460F8A /* BookmarkedSeriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkedSeriesController.swift; sourceTree = "<group>"; };
 		F1FBAF981E56DEE400460F8A /* HotSeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSeriesViewController.swift; sourceTree = "<group>"; };
 		F1FBAF9A1E56DF4100460F8A /* CurrentSeriesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentSeriesController.swift; sourceTree = "<group>"; };
+		F1FBAF9D1E56E8CB00460F8A /* MangaSeriesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MangaSeriesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		F1625A021E56C1AB0010E1C3 /* MyManga */ = {
 			isa = PBXGroup;
 			children = (
+				F1FBAF9C1E56E73C00460F8A /* Model */,
 				F1625A031E56C1AB0010E1C3 /* AppDelegate.swift */,
 				F1625A051E56C1AB0010E1C3 /* ViewController.swift */,
 				F1625A071E56C1AB0010E1C3 /* Main.storyboard */,
@@ -165,6 +168,14 @@
 				F1625A251E56C1AC0010E1C3 /* Info.plist */,
 			);
 			path = MyMangaUITests;
+			sourceTree = "<group>";
+		};
+		F1FBAF9C1E56E73C00460F8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1FBAF9D1E56E8CB00460F8A /* MangaSeriesModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1FBAF9E1E56E8CB00460F8A /* MangaSeriesModel.swift in Sources */,
 				F1625A341E56CA720010E1C3 /* APIManager.swift in Sources */,
 				F1625A061E56C1AB0010E1C3 /* ViewController.swift in Sources */,
 				F1FBAF9B1E56DF4100460F8A /* CurrentSeriesController.swift in Sources */,

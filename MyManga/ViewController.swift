@@ -48,7 +48,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func fetchAnimeForSearchQuery(query: String) -> Void {
-        manager.fetchAnimeListForQuery(type: "manga", query: query, success: { 
+        manager.fetchAnimeListForQuery(type: "manga", query: query, success: { (seriesList) in
             
         }) { (error) in
             

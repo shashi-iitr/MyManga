@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import ObjectMapper
 
 class APIManager: NSObject {
     
@@ -37,7 +38,7 @@ class APIManager: NSObject {
         }
     }
     
-    func fetchAnimeListForQuery(type: String, query: String, success:@escaping () -> Void, failure:@escaping (NSError?) -> Void) -> Void {
+    func fetchAnimeListForQuery(type: String, query: String, success:@escaping ([MangaSeriesModel]) -> Void, failure:@escaping (NSError?) -> Void) -> Void {
         
         let newQuery = String(query.characters.map {
             $0 == " " ? "+" : $0
@@ -49,14 +50,26 @@ class APIManager: NSObject {
         if let token = token {
             let headers = ["Authorization": "Bearer \(token)"]
             Alamofire.request(path, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: headers).responseJSON(completionHandler: { (responseData) in
+                print("anime query responseData for \(query) \(responseData)")
                 var isSuccess = false
-                if((responseData.result.value) != nil) {
+                var mangaSeriesList = [MangaSeriesModel]()
+                if ((responseData.result.value) != nil) {
+                    let mangas = responseData.result.value as! NSArray
+                    for manga in mangas {
+                        let parsedManga: MangaSeriesModel? = Mapper<MangaSeriesModel>().map(JSONObject: manga)
+                        if let parsedManga = parsedManga {
+                            mangaSeriesList.append(parsedManga)
+                            print("parsedManga \(parsedManga.identifier) \(parsedManga.title)")
+                        }
+                    }
+                    
+                    print("mangaSeriesList \(mangaSeriesList)")
+
                     isSuccess = true
-                    print("anime query responseData for \(query) \(responseData)")
                 }
                 
                 if isSuccess {
-                    success()
+                    success(mangaSeriesList)
                 } else {
                     failure(NSError.init(domain: "Error", code: 401, userInfo: nil))
                 }
