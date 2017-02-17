@@ -34,5 +34,4 @@ class MangaSeriesModel: NSObject, Mappable {
         imageURLMedium  <- map["image_url_med"]
         imageURLSmall   <- map["image_url_sml"]
     }
-
 }

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MangaSeriesListCell" rowHeight="58" id="KGk-i7-Jjw" customClass="MangaSeriesListCell" customModule="MyManga" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sek-MN-K3m">
+                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Y5d-KS-3U1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXb-N3-fmJ">
+                        <rect key="frame" x="60" y="8" width="227" height="44"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Oblique" family="Helvetica" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Sek-MN-K3m" secondAttribute="bottom" constant="7" id="BkI-q7-5uy"/>
+                    <constraint firstItem="Sek-MN-K3m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="NZl-FQ-454"/>
+                    <constraint firstAttribute="trailing" secondItem="ZXb-N3-fmJ" secondAttribute="trailing" id="WPT-bY-Rg0"/>
+                    <constraint firstItem="ZXb-N3-fmJ" firstAttribute="leading" secondItem="Sek-MN-K3m" secondAttribute="trailing" constant="8" id="bfh-zd-G3J"/>
+                    <constraint firstAttribute="bottom" secondItem="ZXb-N3-fmJ" secondAttribute="bottom" constant="7" id="nNd-Rc-s7e"/>
+                    <constraint firstItem="ZXb-N3-fmJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="p7R-8v-Tao"/>
+                    <constraint firstItem="Sek-MN-K3m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="sgH-Ze-UW1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="seriesImageView" destination="Sek-MN-K3m" id="tfL-1d-lrq"/>
+                <outlet property="seriesNameLabel" destination="ZXb-N3-fmJ" id="ulg-BT-Y5Y"/>
+            </connections>
+            <point key="canvasLocation" x="94" y="44"/>
+        </tableViewCell>
+    </objects>
+</document>
