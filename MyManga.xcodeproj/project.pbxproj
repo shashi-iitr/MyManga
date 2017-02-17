@@ -15,6 +15,9 @@
 		F1625A0E1E56C1AB0010E1C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1625A0C1E56C1AB0010E1C3 /* LaunchScreen.storyboard */; };
 		F1625A191E56C1AB0010E1C3 /* MyMangaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1625A181E56C1AB0010E1C3 /* MyMangaTests.swift */; };
 		F1625A241E56C1AC0010E1C3 /* MyMangaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1625A231E56C1AC0010E1C3 /* MyMangaUITests.swift */; };
+		F1625A321E56C8490010E1C3 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1625A311E56C8490010E1C3 /* Constant.swift */; };
+		F1625A341E56CA720010E1C3 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1625A331E56CA720010E1C3 /* APIManager.swift */; };
+		F1FBAF931E56D30400460F8A /* GenericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FBAF921E56D30400460F8A /* GenericExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		F1625A1F1E56C1AC0010E1C3 /* MyMangaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMangaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1625A231E56C1AC0010E1C3 /* MyMangaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMangaUITests.swift; sourceTree = "<group>"; };
 		F1625A251E56C1AC0010E1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1625A311E56C8490010E1C3 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F1625A331E56CA720010E1C3 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F1FBAF921E56D30400460F8A /* GenericExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,9 @@
 				F1625A0A1E56C1AB0010E1C3 /* Assets.xcassets */,
 				F1625A0C1E56C1AB0010E1C3 /* LaunchScreen.storyboard */,
 				F1625A0F1E56C1AB0010E1C3 /* Info.plist */,
+				F1625A311E56C8490010E1C3 /* Constant.swift */,
+				F1625A331E56CA720010E1C3 /* APIManager.swift */,
+				F1FBAF921E56D30400460F8A /* GenericExtension.swift */,
 			);
 			path = MyManga;
 			sourceTree = "<group>";
@@ -340,8 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1625A341E56CA720010E1C3 /* APIManager.swift in Sources */,
 				F1625A061E56C1AB0010E1C3 /* ViewController.swift in Sources */,
 				F1625A041E56C1AB0010E1C3 /* AppDelegate.swift in Sources */,
+				F1FBAF931E56D30400460F8A /* GenericExtension.swift in Sources */,
+				F1625A321E56C8490010E1C3 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

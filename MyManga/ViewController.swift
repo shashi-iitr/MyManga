@@ -8,18 +8,56 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
+    
+    lazy var manager: APIManager = {
+        return APIManager()
+    }()
 
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        textField.delegate = self
+        fetchAccessToken()
+    }
+    
+    //MARK: UITextFieldDelegate
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.textColor = UIColor.black
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        fetchAnimeForSearchQuery(query: textField.text!)
+        return true
+    }
+    
+    //MARK: HELPERS
+    
+    func fetchAccessToken() -> Void {
+        manager.getAccessToken(success: {
+            print("got access token")
+        }) { (error) in
+            
+        }
+    }
+    
+    func fetchAnimeForSearchQuery(query: String) -> Void {
+        manager.fetchAnimeListForQuery(type: "manga", query: query, success: { 
+            
+        }) { (error) in
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 
